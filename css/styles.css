@@ -1,9 +1,9 @@
 * {
- 
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 
 }
 
@@ -13,10 +13,19 @@
   /* background-image: url('../img/tallinn-center.jpg');
   background-size: cover;
   background-position: center; */
-  height: 80vh;
+  height: 100vh;
   /* Adjust as needed */
   position: relative;
+  border-radius: 50%/120% 1px 0 0;
+}
 
+.main-title {
+  font-size: 100px;
+  
+}
+.secondary-text{
+  font-size: 50px;
+  
 }
 
 .main-bg:after {
@@ -27,11 +36,12 @@
   right: 0;
   background: linear-gradient(to top, #00171F, transparent);
   height: 40%;
+ 
 }
 
 .overlay-text {
   color: white;
-  text-align: center;
+  
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent) center;
 
 }
@@ -54,7 +64,8 @@
 
 .fade-in {
   opacity: 0;
-  transform: translateY(20px); /* Optional: slight movement for extra effect */
+  transform: translateY(20px);
+  /* Optional: slight movement for extra effect */
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
@@ -66,7 +77,8 @@
 
 .fade-in-section {
   opacity: 0;
-  transform: translateY(20px); /* Optional: small movement for a smoother effect */
+  transform: translateY(20px);
+  /* Optional: small movement for a smoother effect */
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
@@ -76,16 +88,56 @@
   transform: translateY(0);
 }
 
+/* Shape divider */
+
+.dark {
+  background: #00A7E1;
+}
+
+.curve {
+  position: absolute;
+  height: 225px;
+  width: 100%;
+
+}
+
+.curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #00A7E1;
+  transform: translate(85%, 60%);
+
+}
+
+.curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 50%;
+  height: 100%;
+  background-color: #00171F;
+  transform: translate(-4%, 40%);
+}
+
+
+
 @media (min-width: 992px) {
 
-  
-  .table-bordered tbody th, 
+
+  .table-bordered tbody th,
   .table-bordered tbody td {
-      padding: 20px; /* Increases row height */
+    padding: 20px;
+    /* Increases row height */
   }
 
-  .table-bordered th, 
+  .table-bordered th,
   .table-bordered td {
-      width: 150px; /* Adjusts column width */
+    width: 150px;
+    /* Adjusts column width */
   }
 }
