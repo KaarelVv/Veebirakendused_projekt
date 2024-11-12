@@ -12,12 +12,22 @@
     <link rel="stylesheet" href="./css/styles.css">
 
     <!-- Bootstrap JavaScript -->
-    <script src="./main/bootstrap.min.js" async></script>
+    <script src="./main/bootstrap.min.js" defer></script>
+    <script src="./main/main.js" defer></script>
+
+    <!-- When async is Used:
+    The script loads independently of the HTML parsing, 
+    which can result in the script running before the DOM is ready.
+    If main.js tries to access or manipulate elements in the DOM (like your taable), 
+    it may not find them yet, causing the code to fail. 
+    
+    The defer attribute loads the script asynchronously but ensures it executes only after the DOM is fully parsed, 
+    which often works better than async when manipulating DOM elements.-->
 </head>
 
 <body class="p-color">
 
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top py-4">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Logo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
@@ -30,23 +40,23 @@
                         <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Pangad</a>
+                        <a class="nav-link" href="#bank">Pangad</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Võimalused</a>
+                        <a class="nav-link" href="#features">Võimalused</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Tabel</a>
+                        <a class="nav-link" href="#table">Tabel</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Kontakt</a>
+                        <a class="nav-link" href="#contact">Kontakt</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Lehekülje kirjeldus -->
-    <section class="main-bg d-flex justify-content-center align-items-top">
+    <section class="main-bg d-flex justify-content-center align-items-top fade-in-section" id="home">
         <div class="container-fluid">
             <div class="overlay-text text-center">
                 <h1>Investeerimise võimalused Eesti pankades</h1>
@@ -54,20 +64,22 @@
                     Voluptatum nisi
                     fugit accusantium nesciunt eligendi molestiae cupiditate beatae nulla aliquam ea consectetur
                     doloremque magnam repudiandae, numquam quo libero?</p>
-
             </div>
         </div>
     </section>
-    <!--  -->
-    <section>
+    <!-- Pangad ja institutsioonid -->
+    <section class="fade-in-section" id="bank">
+        <div class="text-center p-3">
+            <h1 class="text-center p-color text-white">Natukene ajalugu</h1>
+        </div>
         <div>
-            <!-- <h1 class="text-center bg-white text-black">Taust</h1> -->
-            <div class="row d-flex justify-content-evenly mb-3">
-                <div class="card" style="width:400px">
-                    <img class="card-img-top p-2 " src="./img/Swed-Logo.jpg" alt="Card image">
 
+            <div class="row d-flex justify-content-evenly mx-auto">
+                <div class="card" style="max-width: 375px">
+                    <div class="border border-black card-logo">
+                        <img class="card-img-top" src="./img/Swed-Logo.jpg" alt="Card image">
+                    </div>
                     <div class="card-body">
-
                         <p class="card-text">Swedbank on suurim pank Eestis, mille on oma finantspartneriks valinud üle
                             960 000 era- ning 130 000 ärikliendi.<br>
                             Pakume laia valikut finantsteenuseid, nende seas arvelduskontod, hüpoteegid, kindlustus,
@@ -78,11 +90,11 @@
                         <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
                     </div>
                 </div>
-                <div class="card" style="width:400px">
-
-                    <img class="card-img-top card-logo-size p-2" src="./img/seb-logo-3.png" alt="Card image">
+                <div class="card" style="max-width: 375px">
+                    <div class="border border-black card-logo">
+                        <img class="card-img-top" src="./img/seb-logo(edited).png" alt="Card image">
+                    </div>
                     <div class="card-body">
-
                         <p class="card-text">SEB Pank on Eesti suuruselt teine pank, mille omanik on Rootsi pank
                             Skandinaviska Enskilda Banken (SEB). Enne seda, kui Rootsi pank Eesti panga kõik aktsiad
                             omandas, kandis see nime Eesti Ühispank, seejärel SEB Eesti Ühispank.<br>
@@ -92,10 +104,11 @@
                         <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
                     </div>
                 </div>
-                <div class="card" style="width:400px">
-                    <img class="card-img-top card-logo-size p-2" src="./img/LHV-logo.png" alt="Card image">
+                <div class="card" style="max-width: 375px">
+                    <div class="border border-black card-logo">
+                        <img class="card-img-top" src="./img/LHV-logo(edited).png" alt="Card image">
+                    </div>
                     <div class="card-body">
-
                         <p class="card-text">LHV asutasid 1999. aastal Rain Lõhmus ja Andres Viisemann. Meil töötab
                             rohkem kui 940 inimest. Meie esindused asuvad Tallinnas, Tartus ja Pärnus. Meie
                             pangateenuseid kasutab üle 400 000 kliendi, LHV hallatavatel pensionifondidel on 129 000
@@ -104,10 +117,11 @@
                         <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
                     </div>
                 </div>
-                <div class="card" style="width:400px">
-                    <img class="card-img-top p-2" src="./img/coop-pank-color-1.jpg" alt="Card image">
+                <div class="card" style="max-width: 375px">
+                    <div class="border border-black card-logo">
+                        <img class="card-img-top" src="./img/coop-pank-color-1.jpg" alt="Card image">
+                    </div>
                     <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
                         <p class="card-text">Coop Pank on Eesti kapitalil põhinev pank. Panga ametlik nimi on Coop Pank
                             AS.
                             Panga tooteportfelli kuuluvad hoiused, äri- ja eralaenud, liising, pangakaardid,
@@ -121,11 +135,12 @@
         </div>
     </section>
     <!-- Võimalused -->
-    <section class="s-color">
+    <section class="s-color fade-in-section" id="features">
+        <div class="text-center p-3">
+            <h1 class="text-white">Võimaluste ülevaade</h1>
+        </div>
         <div class="p-3">
-            <div class="text-center p-3">
-                <h3 class="text-white">Võimaluste ülevaade</h3>
-            </div>
+
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -205,12 +220,13 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="container-lg">
-            <div class="text-center p-3">
-                <h3 class="text-white">Tabel</h3>
-            </div>
-            <table class="table table-striped table-bordered">
+    <section class="fade-in-section">
+        <div class="text-center p-3">
+            <h1 class="text-white">Tabel</h1>
+        </div>
+        <div class="table-responsive d-flex justify-content-center align-items-center">
+
+            <table class="table-dark m-3 text-center table-bordered fade-in" id="table">
                 <thead>
                     <tr>
                         <th scope="col"></th>
@@ -223,26 +239,26 @@
                 <tbody>
                     <tr>
                         <th scope="row">Aksiad</th>
-                        <td>Võimalused</td>
-                        <td>Swedbank</td>
-                        <td>SEB</td>
-                        <td>LHV</td>
+                        <td>Available on major EU and U.S. markets, moderate fees</td>
+                        <td>Limited international options, higher fees</td>
+                        <td>Extensive Baltic and international options, low fees</td>
+                        <td>Limited or none</td>
 
                     </tr>
                     <tr>
                         <th scope="row">Pension</th>
-                        <td>Võimalused</td>
-                        <td>Swedbank</td>
-                        <td>SEB</td>
-                        <td>LHV</td>
+                        <td>Variety of funds (low to high risk)</td>
+                        <td>Range of pension funds with sustainable options</td>
+                        <td>Flexible funds, including digital-first options</td>
+                        <td>Basic pension funds available</td>
 
                     </tr>
                     <tr>
                         <th scope="row">Fondid</th>
-                        <td>Võimalused</td>
-                        <td>Swedbank</td>
-                        <td>SEB</td>
-                        <td>LHV</td>
+                        <td>Broad selection, includes socially responsible options</td>
+                        <td>Solid selection of mutual funds, conservative focus</td>
+                        <td>Good selection with some unique funds</td>
+                        <td>Limited options</td>
 
                     </tr>
                     <tr>
@@ -254,34 +270,43 @@
 
                     </tr>
                     <tr>
+                        <th scope="row">Krüpto</th>
+                        <td>Not available</td>
+                        <td>Not available</td>
+                        <td>Available (limited crypto exposure options)</td>
+                        <td>Not available</td>
+
+                    </tr>
+                    <tr>
                         <th scope="row">Tasud</th>
-                        <td>Võimalused</td>
-                        <td>Swedbank</td>
-                        <td>SEB</td>
-                        <td>LHV</td>
+                        <td>Moderate for stocks, higher for smaller accounts</td>
+                        <td>Moderate to high, depending on transaction type</td>
+                        <td>Low trading fees, but inactivity fees for some accounts</td>
+                        <td>Generally low, but limited features</td>
 
                     </tr>
                     <tr>
                         <th scope="row">Mille poolest erineb</th>
-                        <td>Võimalused</td>
-                        <td>Swedbank</td>
-                        <td>SEB</td>
-                        <td>LHV</td>
+                        <td>Strong advisory services</td>
+                        <td>Educational resources, personalized guidance</td>
+                        <td>Advanced trading options, unique crypto exposure</td>
+                        <td>Simple and stable investment options</td>
 
                     </tr>
                     <tr>
                         <th scope="row">Kliendi tugi</th>
-                        <td>Võimalused</td>
-                        <td>Swedbank</td>
-                        <td>SEB</td>
-                        <td>LHV</td>
+                        <td>Extensive support options, personalized advice</td>
+                        <td>Good support with online resources</td>
+                        <td>Tech-savvy support, strong online presence</td>
+                        <td>Basic support, limited compared to larger banks</td>
 
                     </tr>
                 </tbody>
             </table>
+
         </div>
     </section>
-    <section class="s-color">
+    <section class="s-color fade-in-section">
         <div class="d-flex justify-content-around">
             <div class="message col-1 text-white">
                 <h3>Sõnum</h3>
@@ -289,7 +314,7 @@
                     deleniti beatae laudantium exercitationem quod, soluta architecto ad, qui labore voluptas modi vitae
                     id magnam accusantium?</p>
             </div>
-            <div class="contact col-2 text-white">
+            <div class="contact col-2 text-white" id="contact">
                 <h3>Kontaktid</h3>
                 <div class="row">
                     <a>Swed</a>
