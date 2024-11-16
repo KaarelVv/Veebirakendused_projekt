@@ -73,3 +73,13 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", fadeInCardsOnScroll);
     fadeInCardsOnScroll(); // Run on page load to check initial view
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Select specific elements for fade-in
+    const elementsToFade = document.querySelectorAll('.fade-invest, .fade-estonia, .fade-lower-text, .fade-span');
+  
+    // Add 'fade-in' class to trigger animations
+    setTimeout(() => {
+      elementsToFade.forEach(element => element.classList.add('fade-in'));
+    }, 500); // Adjust delay as needed
+  });
