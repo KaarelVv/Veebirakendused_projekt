@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.css">
-
     <!-- Custom Styles -->
     <link rel="stylesheet" href="./css/styles.css">
-
     <!-- Bootstrap JavaScript -->
     <script src="./main/bootstrap.min.js" defer></script>
     <script src="./main/main.js" defer></script>
-
     <!-- When async is Used:
     The script loads independently of the HTML parsing, 
     which can result in the script running before the DOM is ready.
@@ -24,7 +20,6 @@
     The defer attribute loads the script asynchronously but ensures it executes only after the DOM is fully parsed, 
     which often works better than async when manipulating DOM elements.-->
 </head>
-
 <body class="p-color">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top py-4 p-5">
         <div class="container-fluid">
@@ -72,9 +67,9 @@
         <div class="stripe">
             <div class="fill"></div>
         </div>
-        <div class="text-center p-3">
+        <!-- <div class="text-center p-3">
             <h1 class="text-center p-color text-white">Natukene tagatausta</h1>
-        </div>
+        </div> -->
         <div>
             <div class="row d-flex justify-content-evenly mx-auto">
                 <div class="card mb-5" style="max-width: 375px">
@@ -89,7 +84,6 @@
                             Meie eesmärk on aidata kaasa sellele, et inimeste ja ettevõtete rahaasjad oleksid
                             pikaajaliselt korras. Järgime kõigis oma tegevustes kolme väärtust: oleme avatud, lihtsad ja
                             hoolivad.</p>
-
                     </div>
                 </div>
                 <div class="card mb-5" style="max-width: 375px">
@@ -103,7 +97,6 @@
                             SEB on Eesti turule keskendunud universaalpank, mis pakub täisfinantsteenuseid suurtele,
                             väikestele ja keskmise suurusega ettevõtetele, avalikule sektorile ja eraisikutele. 2023.
                             aasta lõpu seisuga oli SEB Eesti Ühispangal üle 750 000 era- ja ärikliendi. </p>
-
                     </div>
                 </div>
                 <div class="card mb-5" style="max-width: 375px">
@@ -116,7 +109,6 @@
                             kasutab kokku juba üle 400 000 kliendi. Hallatavatel pensionifondidel on 129 000
                             aktiivset ning LHV Kindlustusega on kaitstud 160 000 klienti. Pank on väga uuendusmeelne
                             ning põhitugevuseks on suur investeerimis- ja ettevõtluskogemus.</p>
-
                     </div>
                 </div>
                 <div class="card mb-5" style="max-width: 375px">
@@ -130,7 +122,6 @@
                             arveldusteenused, kaardimaksete vastuvõtt, faktooring, akreditiiv, privaatpangandus,
                             kaubanduse finantseerimine ja kindlustusteenus. Coop pank omab 4% Eesti hoiuste ja
                             pangalaenude turust ja 9% krediidiandjate turust.</p>
-
                     </div>
                 </div>
             </div>
@@ -144,7 +135,7 @@
         <div class="text-center p-3">
             <h1 class="text-white">Võimaluste ülevaade</h1>
         </div>
-        <div class="p-3">
+        <div class="p-3 w-75 d-block justify-content-center">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item mb-3">
                     <h2 class="accordion-header">
@@ -158,24 +149,62 @@
                         <div class="accordion-body ">
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="p-5 inclusive-sans-regular">
-                                    <strong>Võimalused:</strong> Offers various investment funds, pension funds, bonds,
-                                    and
-                                    a trading platform for
-                                    stocks and ETFs.<br>
-                                    <strong>Eelised</strong>User-friendly online platform, good range of investment
-                                    funds,
-                                    and personalized
-                                    financial advice available.<br>
-                                    <strong>Puudused</strong>Relatively high fees for smaller investments; trading fees
-                                    on
-                                    stocks and ETFs can add
-                                    up.
-
+                                    <h3>Eelised</h3>
+                                    <ul>
+                                        <li><strong>Lai valik investeerimisvõimalusi: </strong>Swedbank pakub erinevaid
+                                            investeerimisvõimalusi, sealhulgas aktsiad, fondid,
+                                            pensionifondid ja ETF-id.</li>
+                                        <li><strong>Lihtne kasutajaliides: </strong>
+                                            Swedbanki internetipank ja mobiilirakendus on kasutajasõbralikud ning
+                                            sobivad
+                                            hästi
+                                            nii algajatele kui ka kogenud investoritele.</li>
+                                        <li><strong>Toetav klienditeenindus: </strong>Swedbank pakub
+                                            investeerimisteemalisi
+                                            nõustamisi, mis võivad olla eriti kasulikud
+                                            algajatele.</li>
+                                        <li><strong>Kohalik tugi: </strong>
+                                            Swedbank on Eestis tuntud ja usaldusväärne pank, mis võimaldab lihtsat
+                                            ligipääsu
+                                            kohalikele investeeringutele.</li>
+                                        <li><strong>Konto sidumine igapäevapangandusega: </strong>
+                                            Investeerimiskonto saab mugavalt siduda oma igapäevapangandusega, mis teeb
+                                            raha
+                                            liigutamise lihtsamaks.</li>
+                                        <li><strong>Turundusanalüüsid ja raportid: </strong>
+                                            Swedbank pakub oma klientidele analüüse ja turuülevaateid, mis võivad aidata
+                                            paremaid otsuseid teha.</li>
+                                    </ul>
+                                    <h3>Puudused</h3>
+                                    <ul>
+                                        <li><strong>Kõrgemad tasud: </strong>
+                                            Võrreldes mõnede alternatiivsete investeerimisplatvormidega (nt Interactive
+                                            Brokers või LHV Trader) võivad Swedbanki tehingutasud ja haldustasud olla
+                                            kõrgemad.</li>
+                                        <li><strong>Piiratum valik globaalseid investeeringuid: </strong>
+                                            Kuigi Swedbank pakub palju võimalusi, võib rahvusvaheliste aktsiate ja
+                                            ETF-ide valik olla väiksem kui spetsiaalsetel investeerimisplatvormidel.
+                                        </li>
+                                        <li><strong>Vähem sobiv aktiivsetele kauplejatele: </strong>
+                                            Swedbank ei paku tipptasemel kauplemisplatvorme ega reaalajas andmeid, mida
+                                            nõudlikumad ja aktiivsemad kauplejad võiksid vajada.</li>
+                                        <li><strong>Pankadega seotud riskid </strong>
+                                            Investeerimiskonto ja pangandus on samas süsteemis. Kui pangaga peaks
+                                            probleeme tekkima (nt tehnilised tõrked), võib see mõjutada investeerimist.
+                                        </li>
+                                        <li><strong>Vähem haridusressursse: </strong>
+                                            Kuigi Swedbankil on mõningaid haridusmaterjale, ei ole nende valik nii
+                                            ulatuslik kui mõnel spetsialiseerunud investeerimisplatvormil.</li>
+                                        <li><strong>Investeeringutega seotud piirangud: </strong>
+                                            Mõningad vähem levinud investeerimisvõimalused (nt krüptovaluutad või
+                                            alternatiivsed varad) ei ole Swedbanki kaudu kättesaadavad.</li>
+                                    </ul>
+                                    <a
+                                        href="https://www.swedbank.ee/private/investor/stock/startInvesting?language=EST"></a>
                                 </div>
                                 <img src="./img/swed-s.jpg" alt="" class="accordion-image">
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="accordion-item mb-3">
@@ -189,19 +218,61 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body ">
                             <div class="d-flex justify-content-center align-items-center">
+                                <img src="./img/seb-s.jpg" alt="" class="accordion-image">
                                 <div class="p-5 inclusive-sans-regular">
-                                    <strong>Võimalused</strong>
-                                    Options: Provides mutual funds, pension funds, bonds, and a platform for trading
-                                    stocks and
-                                    ETFs.<br>
-                                    <strong>Eelised</strong>
-                                    Pros: Extensive options for low-to-medium risk investments, solid educational
-                                    resources, and
-                                    a simple platform.<br>
-                                    <strong>Puudused</strong>
-                                    Cons: Limited international trading options, higher fees for active trading.
+                                    <h3>Eelised</h3>
+                                    <ul>
+                                        <li><strong>Lai valik investeerimisvõimalusi: </strong>SEB pakub aktsiaid, fonde
+                                            (sh SEB enda hallatavaid fonde), ETF-e ja pensionifonde, sobides nii
+                                            algajatele kui ka edasijõudnutele.</li>
+                                        <li><strong>Lihtne integreerimine igapäevapangandusega: </strong>
+                                            SEB investeerimiskonto saab mugavalt siduda igapäevapangandusega, mis teeb
+                                            raha haldamise lihtsamaks.</li>
+                                        <li><strong>Madal alguslävi: </strong>SEB võimaldab väikeste summadega
+                                            investeerimist, eriti fondide puhul, mis sobib hästi algajatele
+                                            investoritele..</li>
+                                        <li><strong>Kasutajasõbralik platvorm: </strong>
+                                            SEB internetipank ja mobiilirakendus on lihtsad ja intuitiivsed, pakkudes
+                                            võimalust investeeringuid hallata ühelt platvormilt.</li>
+                                        <li><strong>Toetavad juhendmaterjalid: </strong>
+                                            SEB pakub põhjalikke juhendeid ja hariduslikke ressursse investeerimise
+                                            alustamiseks.</li>
+                                        <li><strong>Soodustused pensionifondide investeerimiseks: </strong>
+                                            SEB pensionifondid pakuvad pikaajaliste investeeringute jaoks stabiilsust
+                                            ning sobivad hästi nendele, kes otsivad lihtsat viisi pensioni kogumiseks.
+                                        </li>
+                                        <li><strong>Pikad kogemused fondihalduses: </strong>
+                                            SEB on tuntud oma kvaliteetse fondihalduse poolest, pakkudes laia valikut
+                                            nii aktiivselt kui ka passiivselt juhitud fonde.
+                                        </li>
+                                    </ul>
+                                    <h3>Puudused</h3>
+                                    <ul>
+                                        <li><strong>Kõrgemad teenustasud: </strong>
+                                            SEB investeerimistehingute kulud võivad olla kõrgemad kui mõnel teisel
+                                            platvormil (nt LHV, Interactive Brokers).</li>
+                                        <li><strong>PPiiratud rahvusvaheliste aktsiate ja ETF-ide valik: </strong>
+                                            SEB pakub küll ligipääsu Euroopa ja USA turgudele, kuid valik pole nii lai
+                                            kui rahvusvahelistel spetsialiseerunud platvormidel.
+                                        </li>
+                                        <li><strong>Puudub tipptasemel kauplemisplatvorm: </strong>
+                                            SEB ei ole suunatud aktiivsetele kauplejatele, mistõttu puuduvad arenenud
+                                            kauplemisfunktsioonid ja reaalajas andmed.</li>
+                                        <li><strong>Alternatiivsete investeerimisvõimaluste puudumine: </strong>
+                                            SEB kaudu pole võimalik investeerida näiteks krüptovaluutadesse,
+                                            kinnisvaraplatvormidesse või muudesse alternatiivsetesse varaklassidesse.
+                                        </li>
+                                        <li><strong>Pikem tehingute aeg: </strong>
+                                            Investeerimisfondidega seotud tehingud võivad võtta rohkem aega (kuni mitu
+                                            tööpäeva) kui otsesed aktsiatega tehingud.</li>
+                                        <li><strong>Piiratud turuanalüüsid: </strong>
+                                            Kuigi SEB pakub mõningaid turuülevaateid, ei ole need nii põhjalikud kui
+                                            näiteks LHV Traderi või spetsialiseerunud investeerimisplatvormide
+                                            analüüsid.</li>
+                                    </ul>
+                                    <a
+                                        href="https://www.seb.ee/eraklient/kogumine-ja-investeerimine/investeerimine"></a>
                                 </div>
-                                <img src="./img/swed-s.jpg" alt="" class="accordion-image">
                             </div>
                         </div>
                     </div>
@@ -218,18 +289,58 @@
                         <div class="accordion-body">
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="p-5 inclusive-sans-regular">
-                                    <strong>Võimalused</strong>
-                                    Options: Known for wide-ranging investment opportunities, including stocks, bonds,
-                                    funds,
-                                    and unique products like crypto exposure.<br>
-                                    <strong>Eelised</strong>
-                                    Pros: Popular among active investors, competitive fees, a large selection of foreign
-                                    stocks,
-                                    and solid support for tech-savvy users.<br>
-                                    <strong>Puudused</strong>
-                                    Cons: Platform may feel complex for beginners, and there are fees on some account
-                                    types for
-                                    inactive users.
+                                    <h3>Eelised</h3>
+                                    <ul>
+                                        <li><strong>Lai valik investeerimisvõimalusi: </strong>
+                                            LHV pakub suurt valikut aktsiaid, ETF-e, fonde ja võimalust investeerida
+                                            globaalsetele turgudele (sh USA, Euroopa ja Aasia).</li>
+                                        <li><strong>Tugev kauplemisplatvorm: </strong>
+                                            
+                                            LHV Trader on mõeldud aktiivsetele investoritele ja kauplejatele, pakkudes
+                                            reaalajas andmeid, analüütikat ja suurt funktsionaalsust.</li>
+                                        <li><strong>Madalamad tasud rahvusvahelisel
+                                            tasandil: </strong>
+                                            LHV on Eestis üks soodsamaid pankasid rahvusvaheliste aktsiate ja ETF-ide
+                                            ostmiseks.</li>
+                                        <li><strong>Eesti fookus: </strong>
+                                            
+                                            Võimalus investeerida otse Eesti börsil noteeritud ettevõtetesse ja olla
+                                            seotud kohaliku majandusega.</li>
+                                        <li><strong>Kohalik ja aktiivne investeerimiskogukond: </strong>
+                                            
+                                            LHV toetab investeerimisharidust, korraldades seminare ja pakkudes
+                                            põhjalikke turuanalüüse.</li>
+                                        <li><strong>Investeerimiskonto lihtne haldamine: </strong>
+                                            
+                                            LHV investeerimiskonto süsteem on hästi integreeritud, võimaldades maksude
+                                            optimeerimist.</li>
+                                        <li><strong>Laiad lisavõimalused: </strong>
+                                            
+                                            Lisaks investeerimisele on LHV-l pakkuda säästukontod, pensionifondid ja
+                                            muud rahahalduslahendused.</li>
+                                    </ul>
+                                    <h3>Puudused</h3>
+                                    <ul>
+                                        <li><strong>LHV Traderi keerukus algajatele: </strong>
+                                            Kauplemisplatvorm võib algajatele olla liiga keeruline ja mitteintuitiivne.
+                                        </li>
+                                        <li><strong>Kõrgemad tasud kohalike aktsiate ostul: </strong>
+                                            Kuigi rahvusvahelised tasud on madalad, võivad kohalike aktsiate
+                                            tehingutasud olla kõrgemad võrreldes mõne teise pangaga.
+                                        </li>
+                                        <li><strong>Piiratud investeerimisvõimalused väljaspool traditsioonilisi
+                                                varaklasse: </strong>
+                                            Alternatiivsed varad, nagu krüptovaluutad ja kinnisvarainvesteeringud, pole
+                                            LHV kaudu otse saadaval.</li>
+                                        <li><strong>Pangandus vs investeerimisfookus:</strong>
+                                            LHV on küll tugev investeerimisplatvorm, kuid nende
+                                            igapäevapangandusteenused pole nii laialdased kui suurematel pankadel.
+                                        </li>
+                                        <li><strong>Pankadevahelised ülekanded aeglasemad: </strong>
+                                            Kui sinu põhikonto on teises pangas, võib raha ülekandmine LHV-sse võtta
+                                            rohkem aega.</li>
+                                        <a
+                                            href="https://www.swedbank.ee/private/investor/stock/startInvesting?language=EST"></a>
                                 </div>
                                 <img src="./img/swed-s.jpg" alt="" class="accordion-image">
                             </div>
@@ -248,18 +359,58 @@
                         <div class="accordion-body">
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="p-5 inclusive-sans-regular">
-                                    <strong>Võimalused</strong>
-                                    Options: Primarily offers funds and pension plans, along with some investment
-                                    account
-                                    services.<br>
-                                    <strong>Eelised</strong>
-                                    Pros: Good choice for beginners, offers simpler, low-risk funds, and focuses on
-                                    stable
-                                    returns.<br>
-                                    <strong>Puudused</strong>
-                                    Cons: Limited variety of investment products compared to other banks, and a less
-                                    advanced
-                                    trading platform.
+                                    <h3>Eelised</h3>
+                                    <ul>
+                                        <li><strong>Lai valik investeerimisvõimalusi: </strong>Swedbank pakub erinevaid
+                                            investeerimisvõimalusi, sealhulgas aktsiad, fondid,
+                                            pensionifondid ja ETF-id.</li>
+                                        <li><strong>Lihtne kasutajaliides: </strong>
+                                            Swedbanki internetipank ja mobiilirakendus on kasutajasõbralikud ning
+                                            sobivad
+                                            hästi
+                                            nii algajatele kui ka kogenud investoritele.</li>
+                                        <li><strong>Toetav klienditeenindus: </strong>Swedbank pakub
+                                            investeerimisteemalisi
+                                            nõustamisi, mis võivad olla eriti kasulikud
+                                            algajatele.</li>
+                                        <li><strong>Kohalik tugi: </strong>
+                                            Swedbank on Eestis tuntud ja usaldusväärne pank, mis võimaldab lihtsat
+                                            ligipääsu
+                                            kohalikele investeeringutele.</li>
+                                        <li><strong>Konto sidumine igapäevapangandusega: </strong>
+                                            Investeerimiskonto saab mugavalt siduda oma igapäevapangandusega, mis teeb
+                                            raha
+                                            liigutamise lihtsamaks.</li>
+                                        <li><strong>Turundusanalüüsid ja raportid: </strong>
+                                            Swedbank pakub oma klientidele analüüse ja turuülevaateid, mis võivad aidata
+                                            paremaid otsuseid teha.</li>
+                                    </ul>
+                                    <h3>Puudused</h3>
+                                    <ul>
+                                        <li><strong>Kõrgemad tasud: </strong>
+                                            Võrreldes mõnede alternatiivsete investeerimisplatvormidega (nt Interactive
+                                            Brokers või LHV Trader) võivad Swedbanki tehingutasud ja haldustasud olla
+                                            kõrgemad.</li>
+                                        <li><strong>Piiratum valik globaalseid investeeringuid: </strong>
+                                            Kuigi Swedbank pakub palju võimalusi, võib rahvusvaheliste aktsiate ja
+                                            ETF-ide valik olla väiksem kui spetsiaalsetel investeerimisplatvormidel.
+                                        </li>
+                                        <li><strong>Vähem sobiv aktiivsetele kauplejatele: </strong>
+                                            Swedbank ei paku tipptasemel kauplemisplatvorme ega reaalajas andmeid, mida
+                                            nõudlikumad ja aktiivsemad kauplejad võiksid vajada.</li>
+                                        <li><strong>Pankadega seotud riskid </strong>
+                                            Investeerimiskonto ja pangandus on samas süsteemis. Kui pangaga peaks
+                                            probleeme tekkima (nt tehnilised tõrked), võib see mõjutada investeerimist.
+                                        </li>
+                                        <li><strong>Vähem haridusressursse: </strong>
+                                            Kuigi Swedbankil on mõningaid haridusmaterjale, ei ole nende valik nii
+                                            ulatuslik kui mõnel spetsialiseerunud investeerimisplatvormil.</li>
+                                        <li><strong>Investeeringutega seotud piirangud: </strong>
+                                            Mõningad vähem levinud investeerimisvõimalused (nt krüptovaluutad või
+                                            alternatiivsed varad) ei ole Swedbanki kaudu kättesaadavad.</li>
+                                    </ul>
+                                    <a
+                                        href="https://www.swedbank.ee/private/investor/stock/startInvesting?language=EST"></a>
                                 </div>
                                 <img src="./img/swed-s.jpg" alt="" class="accordion-image">
                             </div>
@@ -277,7 +428,6 @@
             <h1 class="text-white">Tabel</h1>
         </div>
         <div class="table-responsive ">
-
             <table class="table-dark m-3 text-center table-bordered fade-in" id="table">
                 <thead>
                     <tr>
@@ -302,7 +452,6 @@
                         <td>Range of pension funds with sustainable options</td>
                         <td>Flexible funds, including digital-first options</td>
                         <td>Basic pension funds available</td>
-
                     </tr>
                     <tr>
                         <th scope="row">Fondid</th>
@@ -310,7 +459,6 @@
                         <td>Solid selection of mutual funds, conservative focus</td>
                         <td>Good selection with some unique funds</td>
                         <td>Limited options</td>
-
                     </tr>
                     <tr>
                         <th scope="row">Krüpto</th>
@@ -332,7 +480,6 @@
                         <td>Educational resources, personalized guidance</td>
                         <td>Advanced trading options, unique crypto exposure</td>
                         <td>Simple and stable investment options</td>
-
                     </tr>
                     <tr>
                         <th scope="row">Kliendi tugi</th>
@@ -340,13 +487,11 @@
                         <td>Good support with online resources</td>
                         <td>Tech-savvy support, strong online presence</td>
                         <td>Basic support, limited compared to larger banks</td>
-
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
-
     <section class="s-color fade-in-section p-5">
         <div class="stripe">
             <div class="fill"></div>
@@ -369,8 +514,6 @@
             </div>
         </div>
     </section>
-
     <footer class="text-white p-3 d-flex">Copyright 2024</footer>
 </body>
-
 </html>
