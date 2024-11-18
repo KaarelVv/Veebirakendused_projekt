@@ -18,16 +18,17 @@
   font-weight: 400;
   font-style: italic;
 }
-.roboto-slab-secondary> {
+
+.roboto-slab-secondary {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  font-size: 18px;
 }
 
 .main-bg {
   background: url('../img/tallinn-center.jpg') center/cover;
-
   /* background-image: url('../img/tallinn-center.jpg');
   background-size: cover;
   background-position: center; */
@@ -36,13 +37,10 @@
   position: relative;
   border-radius: 50%/120% 1px 0 0;
 }
+
 .accordion-image {
   display: none;
 }
-
-
-
-
 
 .main-bg:after {
   content: "";
@@ -50,16 +48,13 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, #00171F, transparent);
+  background: linear-gradient(to top, #00171F);
   height: 40%;
-
 }
 
 .overlay-text {
-  color: white;
-
   background: linear-gradient(to bottom, rgba(0, 0, 0, 2), transparent) center;
-
+  height: 75%;
 }
 
 .p-color {
@@ -68,7 +63,28 @@
 
 .s-color {
   background-image: linear-gradient(#00171F, #00A7E1, #00171F);
+}
 
+.fade-in-element {
+  opacity: 0;
+  transition: opacity 1s ease, transform 2s ease;
+}
+
+.fade-in-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+  /* Reset the position */
+}
+/* Fade locations */
+.fade-from-top {
+  transform: translateY(-50px);
+}
+.fade-from-right {
+  transform: translateX(50px);
+}
+
+.fade-from-bottom {
+  transform: translateY(50px);
 }
 
 .card-logo {
@@ -78,113 +94,7 @@
   align-items: center;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  /* Optional: slight movement for extra effect */
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-/* Faded in */
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20px);
-  /* Optional: small movement for a smoother effect */
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-/* Visible state */
-.fade-in-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Shape divider */
-
-.dark {
-  background: #00A7E1;
-}
-
-/* Container for the stripe */
-.stripe {
-  width: 100%;
-  height: 2px;
-  /* Adjust height as needed */
-  /* Background color of the stripe container */
-  overflow: hidden;
-  position: relative;
-  margin: 20px 0;
-  /* Space between stripes */
-}
-
-/* The fill element inside the stripe */
-.stripe .fill {
-  height: 100%;
-  width: 0;
-  /* Start with 0 width, hidden initially */
-  background-color: lightblue;
-  /* Color of the filling effect */
-  transition: width 1.5s ease-out;
-  /* Smooth transition for fill */
-}
-
-
-
-
-
-@media (min-width: 600px) {
-
-  .main-title {
-    font-size: 200px;
-  
-  }
-  
-  .secondary-text {
-    font-size: 50px;
-  
-  }
-  
-  .accordion-image {
-    display: block;
-    width: 600px;
-}
-
-  .table-bordered tbody th,
-  .table-bordered tbody td {
-    padding: 20px;
-    /* Increases row height */
-  }
-
-  .table-bordered th,
-  .table-bordered td {
-    width: 150px;
-    /* Adjusts column width */
-  }
-
-  .accordion-collapse {
-    display: block !important; /* Always show the content */
-    height: auto !important;  /* Ensure height is not limited */
-    visibility: visible !important;
-}
-
-.accordion-button {
-    pointer-events: none; /* Disable toggling */
-}
-
- 
-  
-}
-
-
-
-
-
-/* Initial state for the cards */
+/* Card fades */
 .card {
   opacity: 0;
   transform: translateY(20px);
@@ -208,30 +118,72 @@
   /* border: 5px solid #00A7E1 ;  */
 }
 
-
-
-
-/* General fade styles */
-.fade-invest, .fade-estonia, .fade-lower-text, .fade-span {
-  opacity: 0;
-  transition: all 2s ease-in-out;
+/* Container for the stripe */
+.stripe {
+  width: 100%;
+  height: 2px;
+  /* Adjust height as needed */
+  /* Background color of the stripe container */
+  overflow: hidden;
+  position: relative;
+  
 }
 
-/* Specific movement animations */
-.fade-from-up {
-  transform: translateY(-50px);
+/* The fill element inside the stripe */
+.stripe .fill {
+  height: 100%;
+  width: 0;
+  /* Start with 0 width, hidden initially */
+  background-color: lightblue;
+  /* Color of the filling effect */
+  transition: width 1.5s ease-out;
+  /* Smooth transition for fill */
 }
 
-.fade-from-right {
-  transform: translateX(50px); /* Move from the right */
-}
 
-.fade-from-down {
-  transform: translateY(50px); /* Move from below */
-}
+/* Style to apply when screen width is bigger than 600px */
+@media (min-width: 600px) {
+/* Responsive styles */
+  .main-title {
+    font-size: 200px;
+  }
 
-/* Reset to visible and positioned */
-.fade-in {
-  opacity: 1;
-  transform: translate(0, 0);
+  .secondary-text {
+    font-size: 50px;
+  }
+
+  .accordion-image {
+    display: block;
+    width: 600px;
+  }
+
+  .table-bordered tbody th,
+  .table-bordered tbody td {
+    padding: 20px;
+    /* Increases row height */
+  }
+
+  .table-bordered th,
+  .table-bordered td {
+    width: 150px;
+    /* Adjusts column width */
+  }
+
+  .accordion-collapse {
+    display: block !important;
+    /* Always show the content */
+    height: auto !important;
+    /* Ensure height is not limited */
+    visibility: visible !important;
+  }
+
+  .accordion-button {
+    pointer-events: none;
+    /* Disable toggling */
+  }
+
+  .table-responsive {
+    display: flex;
+    justify-content: center;
+  }
 }
