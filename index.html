@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,30 +19,38 @@
     it may not find them yet, causing the code to fail. 
     The defer attribute loads the script asynchronously but ensures it executes only after the DOM is fully parsed, 
     which often works better than async when manipulating DOM elements.-->
-
     <!--Ctrl + H -> ^\s*$\n ----To remove empty lines-->
+    <!-- <a target="_blank" href="https://icons8.com/icon/ntbOqE0dGZYl/global-finance">
+        Global Finance</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
 </head>
+
 <body class="p-color">
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top py-4 mx-auto">
+    <nav class="navbar navbar-expand-md sticky-top py-4 mx-auto nav-color-fade">
         <div class="container-fluid fade-in-element fade-from-top">
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand ps-3" href="#"><img src="./img/icons/icons8-bullish-trade-64.png" alt="Home"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
                 aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ms-auto">
-                 <li class="nav-item px-3">
-                        <a class="nav-link" href="#bank">Institutsioonid</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#bank"> <img src="./img/icons/icons8-e-commerce-50.png"
+                                alt="Int">
+                            Institutsioonid</a>
                     </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#features">Võimalused</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#features"><img src="./img/icons/icons8-info-64.png"
+                                alt="Oprt" class=" logo-custom"> Võimalused</a>
                     </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#table">Tabel</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#table"><img src="./img/icons/icons8-grid-view-50.png"
+                                alt="Table">Tabel</a>
                     </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#contact">Kontakt</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact"><img src="./img/icons/icons8-message-50.png"
+                                alt="cont">
+                            Tagasisisde</a>
                     </li>
                 </ul>
             </div>
@@ -50,7 +59,7 @@
     <!-- Lehekülje kirjeldus -->
     <section class="main-bg" id="home">
         <div class="container-fluid overlay-text">
-            <div class="">
+            <div class="home-text">
                 <h1 class="main-title text-white fade-in-element fade-from-top inclusive-sans-regular">Inv<span
                         class=" text-white">EST</span>
                 </h1>
@@ -65,13 +74,13 @@
         <div class="stripe">
             <div class="fill"></div>
         </div>
-        <!-- <div class="text-center p-3">
-            <h1 class="text-center p-color text-white">Natukene tagatausta</h1>
-        </div> -->
+        <div class="text-center p-3">
+            <h1 class="text-center p-color text-white">Natukene tausta</h1>
+        </div>
         <div class="roboto-slab-secondary">
             <div class="row d-flex justify-content-evenly mx-auto">
                 <div class="card m-5" style="max-width: 375px">
-                    <div class="border border-black card-logo">
+                    <div class="  card-logo">
                         <img class="card-img-top" src="./img/Swed-Logo.jpg" alt="Card image">
                     </div>
                     <div class="card-body">
@@ -85,7 +94,7 @@
                     </div>
                 </div>
                 <div class="card m-5" style="max-width: 375px">
-                    <div class="border border-black card-logo">
+                    <div class="  card-logo">
                         <img class="card-img-top" src="./img/seb-logo(edited).png" alt="Card image">
                     </div>
                     <div class="card-body">
@@ -98,7 +107,7 @@
                     </div>
                 </div>
                 <div class="card m-5" style="max-width: 375px">
-                    <div class="border border-black card-logo">
+                    <div class="  card-logo">
                         <img class="card-img-top" src="./img/LHV-logo(edited).png" alt="Card image">
                     </div>
                     <div class="card-body">
@@ -110,7 +119,7 @@
                     </div>
                 </div>
                 <div class="card m-5" style="max-width: 375px">
-                    <div class="border border-black card-logo">
+                    <div class="  card-logo">
                         <img class="card-img-top" src="./img/coop-pank-color-1.jpg" alt="Card image">
                     </div>
                     <div class="card-body">
@@ -143,7 +152,8 @@
                             SWEDBANK
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse p-color text-white" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse p-color text-white"
+                        data-bs-parent="#accordionExample">
                         <div class="accordion-body  fade-in-element fade-from-bottom">
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="p-5 inclusive-sans-regular">
@@ -197,8 +207,8 @@
                                             Mõningad vähem levinud investeerimisvõimalused (nt krüptovaluutad või
                                             alternatiivsed varad) ei ole Swedbanki kaudu kättesaadavad.</li>
                                     </ul>
-                                    <a
-                                        href="https://www.swedbank.ee/private/investor/stock/startInvesting?language=EST">LINK</a>
+                                    <a href="https://www.swedbank.ee/private/investor/stock/startInvesting?language=EST"
+                                        class="btn btn-light" target="_blank">Rohkem infot</a>
                                 </div>
                                 <img src="./img/swed-s.jpg" alt="" class="accordion-image">
                             </div>
@@ -213,7 +223,8 @@
                             SEB
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse p-color text-white" data-bs-parent="#accordionExample">
+                    <div id="collapseTwo" class="accordion-collapse collapse p-color text-white"
+                        data-bs-parent="#accordionExample">
                         <div class="accordion-body fade-in-element fade-from-bottom">
                             <div class="d-flex justify-content-center align-items-center">
                                 <img src="./img/seb-s.jpg" alt="" class="accordion-image">
@@ -268,8 +279,8 @@
                                             näiteks LHV Traderi või spetsialiseerunud investeerimisplatvormide
                                             analüüsid.</li>
                                     </ul>
-                                    <a
-                                        href="https://www.seb.ee/eraklient/kogumine-ja-investeerimine/investeerimine">LINK</a>
+                                    <a href="https://www.seb.ee/eraklient/kogumine-ja-investeerimine/investeerimine"
+                                        class="btn btn-light" target="_blank">Rohkem infot</a>
                                 </div>
                             </div>
                         </div>
@@ -283,7 +294,8 @@
                             LHV
                         </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse p-color text-white" data-bs-parent="#accordionExample">
+                    <div id="collapseThree" class="accordion-collapse collapse p-color text-white"
+                        data-bs-parent="#accordionExample">
                         <div class="accordion-body fade-in-element fade-from-bottom">
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="p-5 inclusive-sans-regular">
@@ -332,9 +344,9 @@
                                         <li><strong>Pankadevahelised ülekanded aeglasemad: </strong>
                                             Kui sinu põhikonto on teises pangas, võib raha ülekandmine LHV-sse võtta
                                             rohkem aega.</li>
-                                            </ul>
-                                        <a
-                                            href="https://www.lhv.ee/et/raha-kasvatamise-teekond">LINK</a>
+                                    </ul>
+                                    <a href="https://www.lhv.ee/et/raha-kasvatamise-teekond" class="btn btn-light"
+                                        target="_blank">Rohkem infot</a>
                                 </div>
                                 <img src="./img/lhv-s.jpg" alt="" class="accordion-image">
                             </div>
@@ -349,7 +361,8 @@
                             COOP Pank
                         </button>
                     </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse p-color text-white" data-bs-parent="#accordionExample">
+                    <div id="collapseFour" class="accordion-collapse collapse p-color text-white"
+                        data-bs-parent="#accordionExample">
                         <div class="accordion-body fade-in-element fade-from-bottom">
                             <div class="d-flex justify-content-center align-items-center">
                                 <img src="./img/coop-s.jpg" alt="" class="accordion-image">
@@ -357,7 +370,7 @@
                                     <h3>Eelised</h3>
                                     <ul>
                                         <li><strong>Lihtne ja taskukohane
-                                            igapäevapangandus: </strong>
+                                                igapäevapangandus: </strong>
                                             Coop Pank keskendub esmalt igapäevapangandusele, mis on väiksemate tasudega
                                             ja kergesti ligipääsetav.</li>
                                         <li><strong>Seotud kogukonnaga: </strong>
@@ -365,7 +378,7 @@
                                             kohalike kogukondade ja Coop kauplusteketiga, pakkudes soodustusi ka
                                             igapäevaostudele.</li>
                                         <li><strong>Investeerimisfondid ja
-                                            pensionifondid: </strong>
+                                                pensionifondid: </strong>
                                             Coop pakub ligipääsu lihtsatele investeerimisfondidele ja
                                             pensionilahendustele, mis sobivad pikaajaliseks säästmiseks.</li>
                                         <li><strong>Kasutajasõbralik mobiilirakendus: </strong>
@@ -395,8 +408,8 @@
                                             Coop Pank sobib rohkem inimestele, kes otsivad lihtsaid ja stabiilseid
                                             lahendusi, kuid ei vasta nõudlikuma investori ootustele.</li>
                                     </ul>
-                                    <a
-                                        href="https://www.cooppank.ee/investorile">LINK</a>
+                                    <a href="https://www.cooppank.ee/investorile" class="btn btn-light"
+                                        target="_blank">Rohkem infot</a>
                                 </div>
                             </div>
                         </div>
@@ -410,10 +423,12 @@
             <div class="fill"></div>
         </div>
         <div class="text-center p-3">
-            <h1 class="text-white">Tabel</h1>
+            <h1 class="text-white">Võrdlustabel</h1>
         </div>
-        <div class="table-responsive ">
-            <table class="table-dark m-3 text-center table-bordered fade-in-element fade-from-bottom" id="table">
+        <div class="table-responsive">
+            <table
+                class="table-dark m-3 text-center table-bordered fade-in-element fade-from-bottom inclusive-sans-regular"
+                id="table">
                 <thead>
                     <tr>
                         <th scope="col"></th>
@@ -425,53 +440,53 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">Aksiad</th>
-                        <td>Available on major EU and U.S. markets, moderate fees</td>
-                        <td>Limited international options, higher fees</td>
-                        <td>Extensive Baltic and international options, low fees</td>
-                        <td>Limited or none</td>
+                        <th scope="row">Aktsiad</th>
+                        <td>Saadaval suurematel EL ja USA turgudel, mõõdukad tasud</td>
+                        <td>Piiratud rahvusvahelised võimalused, kõrgemad tasud</td>
+                        <td>Ulatuslikud Balti ja rahvusvahelised võimalused, madalad tasud</td>
+                        <td>Ainult COOP aksia</td>
                     </tr>
                     <tr>
                         <th scope="row">Pension</th>
-                        <td>Variety of funds (low to high risk)</td>
-                        <td>Range of pension funds with sustainable options</td>
-                        <td>Flexible funds, including digital-first options</td>
-                        <td>Basic pension funds available</td>
+                        <td>Erinevad fondid (madalast kõrge riskini)</td>
+                        <td>Valik pensionifonde, sealhulgas jätkusuutlikud valikud</td>
+                        <td>Paindlikud fondid, sealhulgas digitaalsed võimalused</td>
+                        <td>Põhilised pensionifondid saadaval</td>
                     </tr>
                     <tr>
                         <th scope="row">Fondid</th>
-                        <td>Broad selection, includes socially responsible options</td>
-                        <td>Solid selection of mutual funds, conservative focus</td>
-                        <td>Good selection with some unique funds</td>
-                        <td>Limited options</td>
+                        <td>Lai valik, sealhulgas sotsiaalselt vastutustundlikud fondid</td>
+                        <td>Hea valik investeerimisfonde</td>
+                        <td>Hea valik, sealhulgas mõned unikaalsed fondid</td>
+                        <td>Piiratud võimalused</td>
                     </tr>
                     <tr>
                         <th scope="row">Krüpto</th>
-                        <td>Not available</td>
-                        <td>Not available</td>
-                        <td>Available (limited crypto exposure options)</td>
-                        <td>Not available</td>
+                        <td>Ei ole saadaval</td>
+                        <td>Ei ole saadaval</td>
+                        <td>Saadaval (piiratud)</td>
+                        <td>Ei ole saadaval</td>
                     </tr>
                     <tr>
                         <th scope="row">Tasud</th>
-                        <td>Moderate for stocks, higher for smaller accounts</td>
-                        <td>Moderate to high, depending on transaction type</td>
-                        <td>Low trading fees, but inactivity fees for some accounts</td>
-                        <td>Generally low, but limited features</td>
+                        <td>Mõõdukad aktsiate puhul, väiksemate kontode puhul kõrgemad</td>
+                        <td>Mõõdukad kuni kõrged, sõltuvalt tehingutüübist</td>
+                        <td>Madalad tehingutasud, kuid esineb erandeid</td>
+                        <td>Üldiselt madalad, kuid piiratud funktsioonid</td>
                     </tr>
                     <tr>
                         <th scope="row">Mille poolest erineb</th>
-                        <td>Strong advisory services</td>
-                        <td>Educational resources, personalized guidance</td>
-                        <td>Advanced trading options, unique crypto exposure</td>
-                        <td>Simple and stable investment options</td>
+                        <td>Tugevad nõustamisteenused</td>
+                        <td>Õppevahendid, isikustatud juhendamine</td>
+                        <td>Arendatud kauplemisvõimalused, unikaalne krüpto ekspositsioon</td>
+                        <td>Lihtsad ja stabiilsed investeerimisvõimalused</td>
                     </tr>
                     <tr>
-                        <th scope="row">Kliendi tugi</th>
-                        <td>Extensive support options, personalized advice</td>
-                        <td>Good support with online resources</td>
-                        <td>Tech-savvy support, strong online presence</td>
-                        <td>Basic support, limited compared to larger banks</td>
+                        <th scope="row">Klienditugi</th>
+                        <td>Palju erinevaid võimalusi, isiklik nõustamine</td>
+                        <td>Hea tugi ja veebipõhised ressursid</td>
+                        <td>Tehnoloogiateadlik tugi, tugev veebipõhine kohalolu</td>
+                        <td>Põhitugi, piiratud võrreldes suuremate pankadega</td>
                     </tr>
                 </tbody>
             </table>
@@ -481,33 +496,59 @@
         <div class="stripe">
             <div class="fill"></div>
         </div>
-        <div class="">
-            <div class="message text-white">
-                <h3>Sõnum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione corrupti iure maxime error commodi
-                    deleniti beatae laudantium exercitationem quod, soluta architecto ad, qui labore voluptas modi vitae
-                    id magnam accusantium?</p>
+        <div class="d-flex justify-content-evenly">
+            <div class="text-white w-50 float-md-start d-flex justify-content-center align-content-center">
+                <!-- To make appear elements vertically middle -->
+                <div class="d-flex justify-content-center flex-column align-items-center message">
+                    <h3>Sõnum kasutajale</h3>
+                    <p class="inclusive-sans-regular">Kallid inimesed. Igaüks peab meist aru saama, et investeerimisega
+                        kaasnevad riskid. Ei ole vahet,
+                        kas
+                        teha seda läbi tuntud institutsiooni või siis sõber soovitas. Riskitaseme vahe on muidugi antude
+                        näidete alusel väga suur
+                        kuid põhimotiiv jääb samaks. Niikaua, kui ressursid ei ole sinu käes, ei ole need sinu omad.
+                        Aga,
+                        nagu vanasõna ütleb, kes ei riski, see šampust ei joo. Ja parim aeg investeerimiseks oli 10
+                        aastat
+                        tagasi või täna.<br>
+                        PS. Mainin ka juurde, et raha ei ole ainukene investeerimise allikas. Teadmised ja head suhted
+                        on
+                        tegelikult palju tähtsamad!</p>
+                </div>
             </div>
             <div class=" text-white " id="contact">
-                <form>
+                <form class="float-md-end">
+                    <h3>Tagasiside</h3>
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <label for="name"></label>
+                        <input type="password" class="form-control" id="name" placeholder="Nimi">
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <label for="email"></label>
+                        <input type="email" class="form-control" id="email"
+                            placeholder="Sisesta email">
                     </div>
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div class="form-group">
+                        <label for="text-area"></label>
+                        <textarea class="form-control" id="text-area" rows="3"
+                            placeholder="Sisesta tekst siia"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
+                    <button type="submit" class="btn p-color text-white">Saada</button>
+                </form>
             </div>
         </div>
+        <div class="stripe">
+            <div class="fill"></div>
+        </div>
     </section>
-    <footer class="text-white p-3 d-flex">Copyright 2024</footer>
+    <footer class="text-center text-white">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2024 Copyright:
+            <a class="text-white" href="https://voco.ee/">Tartu rakenduslik kolledž</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 </body>
+
 </html>

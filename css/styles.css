@@ -1,189 +1,201 @@
-* {
-
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* outline: 1px solid red; */
-
-}
-
-.inclusive-sans-regular {
-  font-family: "Inclusive Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.inclusive-sans-regular-italic {
-  font-family: "Inclusive Sans", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.roboto-slab-secondary {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 18px;
-}
-
-.main-bg {
-  background: url('../img/tallinn-center.jpg') center/cover;
-  /* background-image: url('../img/tallinn-center.jpg');
-  background-size: cover;
-  background-position: center; */
-  height: 100vh;
-  /* Adjust as needed */
-  position: relative;
-  border-radius: 50%/120% 1px 0 0;
-}
-
-.accordion-image {
-  display: none;
-}
-
-.main-bg:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to top, #00171F);
-  height: 40%;
-}
-
-.overlay-text {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 2), transparent) center;
-  height: 75%;
-}
-
-.p-color {
-  background: #00171F;
-}
-
-.s-color {
-  background-image: linear-gradient(#00171F, #00A7E1, #00171F);
-}
-
-.fade-in-element {
-  opacity: 0;
-  transition: opacity 1s ease, transform 2s ease;
-}
-
-.fade-in-element.visible {
-  opacity: 1;
-  transform: translateY(0);
-  /* Reset the position */
-}
-/* Fade locations */
-.fade-from-top {
-  transform: translateY(-50px);
-}
-.fade-from-right {
-  transform: translateX(50px);
-}
-
-.fade-from-bottom {
-  transform: translateY(50px);
-}
-
-.card-logo {
-  height: 130px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Card fades */
-.card {
-  opacity: 0;
-  transform: translateY(20px);
-  /* Slightly below the viewport */
-  transition: opacity 1s ease, transform 1s ease;
-  /* Smooth transition */
-}
-
-/* Visible state when cards enter the viewport */
-.card.visible {
-  opacity: 1;
-  transform: translateY(0);
-  /* Return to normal position */
-}
-
-.card:hover {
-  transform: scale(1.05);
-  /* Slightly enlarge the card */
-  box-shadow: 0 8px 16px rgb(252, 251, 251);
-  /* Add a shadow to give a 3D effect but movees surrounnding area */
-  /* border: 5px solid #00A7E1 ;  */
-}
-
-/* Container for the stripe */
-.stripe {
-  width: 100%;
-  height: 2px;
-  /* Adjust height as needed */
-  /* Background color of the stripe container */
-  overflow: hidden;
-  position: relative;
-  
-}
-
-/* The fill element inside the stripe */
-.stripe .fill {
-  height: 100%;
-  width: 0;
-  /* Start with 0 width, hidden initially */
-  background-color: lightblue;
-  /* Color of the filling effect */
-  transition: width 1.5s ease-out;
-  /* Smooth transition for fill */
-}
-
-
-/* Style to apply when screen width is bigger than 600px */
-@media (min-width: 600px) {
-/* Responsive styles */
-  .main-title {
-    font-size: 200px;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
   }
 
-  .secondary-text {
-    font-size: 50px;
+  .inclusive-sans-regular h1 p {
+    font-family: "Inclusive Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .inclusive-sans-regular-italic {
+    font-family: "Inclusive Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .roboto-slab-secondary {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+  }
+
+  .main-bg {
+    background: url('../img/tallinn-center.jpg') center/cover;
+    /* background-image: url('../img/tallinn-center.jpg');
+    background-size: cover;
+    background-position: center; */
+    height: 100vh;
+    /* Adjust as needed */
+    position: relative;
+    border-radius: 50%/120% 1px 0 0;
+  }
+
+  .logo-custom {
+    width: 50px;
+    height: 50px;
   }
 
   .accordion-image {
-    display: block;
-    width: 600px;
+    display: none;
   }
 
-  .table-bordered tbody th,
-  .table-bordered tbody td {
-    padding: 20px;
-    /* Increases row height */
+  .main-bg:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, #00171F);
+    height: 40%;
   }
 
-  .table-bordered th,
-  .table-bordered td {
-    width: 150px;
-    /* Adjusts column width */
+  .overlay-text {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 2), transparent) center;
+    height: 75%;
   }
 
-  .accordion-collapse {
-    display: block !important;
-    /* Always show the content */
-    height: auto !important;
-    /* Ensure height is not limited */
-    visibility: visible !important;
+  .p-color {
+    background: #00171F;
   }
 
-  .accordion-button {
-    pointer-events: none;
-    /* Disable toggling */
+  .s-color {
+    background-image: linear-gradient(#00171F, #00A7E1, #00171F);
   }
 
-  .table-responsive {
+  .nav-color-fade {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 2), transparent)
+  }
+
+  .fade-in-element {
+    opacity: 0;
+    transition: opacity 1s ease, transform 2s ease;
+  }
+
+  .fade-in-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+    /* Reset the position */
+  }
+
+  /* Fade locations */
+  .fade-from-top {
+    transform: translateY(-50px);
+  }
+
+  .fade-from-right {
+    transform: translateX(50px);
+  }
+
+  .fade-from-bottom {
+    transform: translateY(50px);
+  }
+
+  .card-logo {
+    height: 130px;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
-}
+
+  /* Card fades */
+  .card {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Slightly below the viewport */
+    transition: opacity 1s ease, transform 1s ease;
+    /* Smooth transition */
+  }
+
+  /* Visible state when cards enter the viewport */
+  .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    /* Return to normal position */
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge the card */
+    box-shadow: 0 8px 16px rgb(252, 251, 251);
+    /* Add a shadow to give a 3D effect but movees surrounnding area */
+    /* border: 5px solid #00A7E1 ;  */
+  }
+
+  /* Container for the stripe */
+  .stripe {
+    width: 100%;
+    height: 2px;
+    /* Adjust height as needed */
+    /* Background color of the stripe container */
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* The fill element inside the stripe */
+  .stripe .fill {
+    height: 100%;
+    width: 0;
+    /* Start with 0 width, hidden initially */
+    background-color: lightblue;
+    /* Color of the filling effect */
+    transition: width 1.5s ease-out;
+    /* Smooth transition for fill */
+  }
+
+  /* Style to apply when screen width is bigger than 600px */
+  @media (min-width: 600px) {
+
+    /* Responsive styles */
+    .main-title {
+      font-size: 200px;
+    }
+
+    .secondary-text {
+      font-size: 50px;
+    }
+
+    .message {
+      width: 1200x;
+    }
+
+    .accordion-image {
+      display: block;
+      width: 600px;
+    }
+
+    .table-bordered tbody th,
+    .table-bordered tbody td {
+      padding: 20px;
+      /* Increases row height */
+    }
+
+    .table-bordered th,
+    .table-bordered td {
+      width: 150px;
+      /* Adjusts column width */
+    }
+
+    .accordion-collapse {
+      display: block !important;
+      /* Always show the content */
+      height: auto !important;
+      /* Ensure height is not limited */
+      visibility: visible !important;
+    }
+
+    .accordion-button {
+      pointer-events: none;
+      /* Disable toggling */
+    }
+
+    .table-responsive {
+      display: flex;
+      justify-content: center;
+    }
+  }
