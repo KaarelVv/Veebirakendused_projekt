@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>InvestEST</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <!-- Custom Styles -->
@@ -41,7 +41,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#features"><img src="./img/icons/icons8-info-64.png"
-                                alt="Oprt" class=" logo-custom"> Võimalused</a>
+                                alt="Oprt" class=" logo-custom">Eelised/Puudused</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#table"><img src="./img/icons/icons8-grid-view-50.png"
@@ -75,7 +75,7 @@
             <div class="fill"></div>
         </div>
         <div class="text-center p-3">
-            <h1 class="text-center p-color text-white">Natukene tausta</h1>
+            <h2 class="text-center p-color text-white">Natukene tausta</h2>
         </div>
         <div class="roboto-slab-secondary">
             <div class="row d-flex justify-content-evenly mx-auto">
@@ -140,7 +140,7 @@
             <div class="fill"></div>
         </div>
         <div class="text-center p-3">
-            <h1 class="text-white inclusive-sans-regular">Võimaluste ülevaade</h1>
+            <h2 class="text-white inclusive-sans-regular">Eelised/Puudused</h2>
         </div>
         <div class="p-3 ">
             <div class="accordion" id="accordionExample">
@@ -423,7 +423,7 @@
             <div class="fill"></div>
         </div>
         <div class="text-center p-3">
-            <h1 class="text-white">Võrdlustabel</h1>
+            <h2 class="text-white">Võrdlustabel</h2>
         </div>
         <div class="table-responsive">
             <table
@@ -496,44 +496,44 @@
         <div class="stripe">
             <div class="fill"></div>
         </div>
-        <div class="d-flex justify-content-evenly">
-            <div class="text-white w-50 float-md-start d-flex justify-content-center align-content-center">
-                <!-- To make appear elements vertically middle -->
-                <div class="d-flex justify-content-center flex-column align-items-center message">
+        <div class="d-flex flex-column flex-md-row justify-content-evenly fade-in-element">
+            <!-- Message Section -->
+            <div class="text-white w-50 d-flex justify-content-center align-items-center">
+                <div class="text-center message">
                     <h3>Sõnum kasutajale</h3>
-                    <p class="inclusive-sans-regular">Kallid inimesed. Igaüks peab meist aru saama, et investeerimisega
-                        kaasnevad riskid. Ei ole vahet,
-                        kas
-                        teha seda läbi tuntud institutsiooni või siis sõber soovitas. Riskitaseme vahe on muidugi antude
-                        näidete alusel väga suur
-                        kuid põhimotiiv jääb samaks. Niikaua, kui ressursid ei ole sinu käes, ei ole need sinu omad.
-                        Aga,
-                        nagu vanasõna ütleb, kes ei riski, see šampust ei joo. Ja parim aeg investeerimiseks oli 10
-                        aastat
-                        tagasi või täna.<br>
+                    <p class="inclusive-sans-regular">
+                        Kallid inimesed. Igaüks peab meist aru saama, et investeerimisega kaasnevad riskid. Ei ole
+                        vahet,
+                        kas teha seda läbi tuntud institutsiooni või siis sõber soovitas. Riskitaseme vahe on muidugi
+                        antude näidete alusel väga suur, kuid põhimotiiv jääb samaks. Niikaua, kui ressursid ei ole sinu
+                        käes, ei ole need sinu omad. Aga, nagu vanasõna ütleb, kes ei riski, see šampust ei joo. Ja
+                        parim
+                        aeg investeerimiseks oli 10 aastat tagasi või täna.<br>
                         PS. Mainin ka juurde, et raha ei ole ainukene investeerimise allikas. Teadmised ja head suhted
                         on
-                        tegelikult palju tähtsamad!</p>
+                        tegelikult palju tähtsamad!
+                    </p>
                 </div>
             </div>
-            <div class=" text-white " id="contact">
+
+            <!-- Feedback Form Section -->
+            <div class="text-white" id="contact">
                 <form class="float-md-end">
                     <h3>Tagasiside</h3>
                     <div class="form-group">
-                        <label for="name"></label>
-                        <input type="password" class="form-control" id="name" placeholder="Nimi">
+                        <label for="name" class="form-label">Nimi</label>
+                        <input type="text" class="form-control" id="name" placeholder="Sisesta oma nimi">
                     </div>
                     <div class="form-group">
-                        <label for="email"></label>
-                        <input type="email" class="form-control" id="email"
-                            placeholder="Sisesta email">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Sisesta email">
                     </div>
                     <div class="form-group">
-                        <label for="text-area"></label>
+                        <label for="text-area" class="form-label">Teie Tagasiside</label>
                         <textarea class="form-control" id="text-area" rows="3"
                             placeholder="Sisesta tekst siia"></textarea>
                     </div>
-                    <button type="submit" class="btn p-color text-white">Saada</button>
+                    <button type="submit" class="btn p-color text-white mt-3">Saada</button>
                 </form>
             </div>
         </div>
@@ -541,7 +541,8 @@
             <div class="fill"></div>
         </div>
     </section>
-    <footer class="text-center text-white">
+
+    <footer class="text-center text-white fade-in-element fade-from-bottom">
         <!-- Copyright -->
         <div class="text-center p-3">
             © 2024 Copyright:

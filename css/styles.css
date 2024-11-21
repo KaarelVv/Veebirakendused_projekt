@@ -25,6 +25,7 @@
     font-size: 18px;
   }
 
+  /*  Main background */
   .main-bg {
     background: url('../img/tallinn-center.jpg') center/cover;
     /* background-image: url('../img/tallinn-center.jpg');
@@ -36,15 +37,18 @@
     border-radius: 50%/120% 1px 0 0;
   }
 
+  /* Navbar logo size */
   .logo-custom {
     width: 50px;
     height: 50px;
   }
 
+  /* Picture removal for smaller screens */
   .accordion-image {
     display: none;
   }
 
+  /* Curve for main picture */
   .main-bg:after {
     content: "";
     position: absolute;
@@ -55,23 +59,28 @@
     height: 40%;
   }
 
+  /* For title visibility */
   .overlay-text {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 2), transparent) center;
     height: 75%;
   }
 
+  /* Primary page color */
   .p-color {
     background: #00171F;
   }
 
+  /* Secondary page color */
   .s-color {
     background-image: linear-gradient(#00171F, #00A7E1, #00171F);
   }
 
+  /* Navbar color */
   .nav-color-fade {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 2), transparent)
   }
 
+  /* Main fade in element */
   .fade-in-element {
     opacity: 0;
     transition: opacity 1s ease, transform 2s ease;
@@ -96,6 +105,7 @@
     transform: translateY(50px);
   }
 
+  /* Card size */
   .card-logo {
     height: 130px;
     display: flex;
@@ -103,7 +113,7 @@
     align-items: center;
   }
 
-  /* Card fades */
+  /* Card fade */
   .card {
     opacity: 0;
     transform: translateY(20px);
@@ -115,15 +125,18 @@
   /* Visible state when cards enter the viewport */
   .card.visible {
     opacity: 1;
-    transform: translateY(0);
     /* Return to normal position */
+    transform: translateY(0);
+
   }
 
   .card:hover {
-    transform: scale(1.05);
     /* Slightly enlarge the card */
-    box-shadow: 0 8px 16px rgb(252, 251, 251);
+    transform: scale(1.05);
+
     /* Add a shadow to give a 3D effect but movees surrounnding area */
+    box-shadow: 0 8px 16px rgb(252, 251, 251);
+
     /* border: 5px solid #00A7E1 ;  */
   }
 
@@ -131,8 +144,8 @@
   .stripe {
     width: 100%;
     height: 2px;
-    /* Adjust height as needed */
-    /* Background color of the stripe container */
+
+
     overflow: hidden;
     position: relative;
   }
@@ -146,6 +159,24 @@
     /* Color of the filling effect */
     transition: width 1.5s ease-out;
     /* Smooth transition for fill */
+  }
+
+  .form-control {
+    border-radius: 5px;
+    /* Smooth edges */
+    padding: 0.75rem;
+    /* Space inside inputs */
+  }
+
+  .btn.p-color {
+    background-color: #000000;
+    /* Button color */
+    border: none;
+  }
+
+  .btn.p-color:hover {
+    background-color: #0056b3;
+    /* Darker on hover */
   }
 
   /* Style to apply when screen width is bigger than 600px */
@@ -197,5 +228,16 @@
     .table-responsive {
       display: flex;
       justify-content: center;
+    }
+
+    .card-text {
+      line-height: 1.6;
+      padding: 15px;
+    }
+
+    /* To make button text bigger */
+    .accordion-button {
+      font-size: 1.25rem;
+      font-weight: bold;/
     }
   }
